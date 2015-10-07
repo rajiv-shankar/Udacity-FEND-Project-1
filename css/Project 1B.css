@@ -1,0 +1,80 @@
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	color: #747704;  /* default color and weight, can override later on */
+}
+
+img,
+embed,
+object,
+video {  /*as per "Selector and Declaration Separation" in Styleguide*/
+	max-width: 100%;
+}
+
+/* CLASSES (in order as they appear in HTML) */
+
+.text-muted {
+	color: #bcbbbb;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+/* Header */
+
+.title-logo {
+	margin-top: 20px;
+}
+
+.title-super {
+	margin-top: 30px;
+	font-size: 60px;
+}
+
+.separator {
+	height: 3px;
+	border: none;
+	color: #bcbbbb;
+	background-color: #bcbbbb;
+	margin-bottom: 25px;
+	width: 100%;
+}
+
+/* Section */
+
+.section-heading {
+	margin-top: 30px;
+	font-size: 40px;
+}
+
+.portfolio-name {
+	text-transform: uppercase;
+	font-size: 35px;  /* shorthand "font: 35px 400 Lato, sans-serif;" does not work -- why? */
+	font-weight: 400;
+}
+
+.weblink {
+	font-size: 20px;
+}
+
+.modal-text{
+	font-size: 25px;
+	font-weight: 300;
+}
+
+/* Footer */
+
+.copyright {
+	padding: 0 0 20px 0;  /* top/right/bottom/left (as per "Shorthand properties" in Styleguide) + no units after 0 */
+	font-weight: 400;
+	font-size: 20px;
+	color: #f8981c;
+	text-align: center;
+}
+
+.css-val {
+	display: block;
+	margin: auto;
+	padding-bottom: 36px;
+}
