@@ -1,0 +1,155 @@
+.content {
+  display: flex;                          /*changes from default value: inline; displays [Hero] element as block-level flex container*/
+  flex-wrap: wrap;                        /*specifies that flexible items should wrap*/
+}
+.navbutton {                           /*"navbutton" only appears in "NARROW SCREEN"*/
+  display: none;
+}
+/*.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}*/
+
+/* -- MOBILE -- */               /*all changes are being made from the default format, as given in Project 1B.css*/
+
+@media screen and (max-width: 549px) {
+  .title-logo {
+    height: 30px;
+    margin-top: 10px;
+  }
+  .title-super {
+    margin-top: 10px;
+    font-size: 40px;
+  }
+  .byline {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .nav {
+    z-index: 10;                          /*stack order of element; greater order before lower order; must be paired with "position" attribute*/
+    background-color: #fff;               /* #fff => white*/
+    width: 300px;                         /*shrinks from 100%*/
+    position: absolute;
+    -webkit-transform: translate(-300px, 0); /* moves drawer off canvas. */
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;    ` /*animates the drawer*/
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbutton {
+    display: inline-block;                /*"navbutton" only appears in "MOBILE"*/
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .navbutton svg {
+    width: 32px;
+    fill: #E0E0E0;
+  }
+
+
+  .section-heading {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .portfolio-name {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .weblink {
+    font-size: 15px;
+  }
+  .modal-dialog  {                        /*changes modal size to fit smaller screen*/
+    width:300px;
+    }
+  .modal-title {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .modal-text {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .copyright {
+    padding: 0 0 20px 0;
+    font-weight: 300;  /*not working - WHY?*/
+    font-size: 15px;
+    color: #f8981c;
+    text-align: center;
+  }
+  .css-val {
+    display: none;
+  }
+}
+
+/* -- TABLET -- */
+
+@media screen and (min-width: 550px) {
+
+  .title-logo {
+    height: 50px;
+    margin-right: 0em;
+  }
+
+  .section-heading {
+    margin-top: 20px;
+    /*font-size: 25px;*/
+    text-align: center;
+  }
+
+  .hero {
+    order: 0;
+    width: 60%;
+  }
+  .weather {
+    order: 1;
+    width: 40%;
+  }
+}
+
+/* -- LAPTOP -- */
+
+@media screen and (min-width: 700px) {
+
+  .title-logo {
+    height: 100%;
+    margin-right: 0em;
+  }
+
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    order: 1;
+    width: 50%;
+  }
+  .scores {
+    order: 2;
+    width: 60%;
+  }
+  .weather {
+    order: 3;
+  }
+}
+
+/* -- WIDESCREEN -- */
+
+@media screen and (min-width: 850px) {
+  main, .header__inner, .nav, .content {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
