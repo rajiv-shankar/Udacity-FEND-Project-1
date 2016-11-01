@@ -17,27 +17,17 @@
 
   <body>
 
-    <div class="container-fluid">  <!-- flexible-width container -->
+    <div class="container">
 
       <header>  <!-- HEADER -->
 
         <div class="row">
-          <div class="col-xs-4">
-
-            <img class="img-responsive title-logo" src="images/codeR_logo.jpg" alt="My logo">  <!-- LOGO -->
-            <p></p><p></p>  <!-- to lower navicon from logo -->
-
-            <a id="navicon">  <!-- NAVICON -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-              </svg>
-          </a>
-
+          <div class="col-md-6">
+            <img class="img-responsive title-logo" src="images/codeR_logo.jpg" alt="My logo">
           </div>
-
-          <div class="col-xs-8 text-right text-uppercase">  <!-- TITLE -->
+          <div class="col-md-6 text-right text-uppercase">
             <h1 class="title-super text-thin">Rajiv Shankar</h1>
-            <h4 class="byline">Dog enthusiast</h4>
+            <h4 class="byline">Dog enthusiast</h4>  <!-- added class="byline" to make responsive -->
           </div>
         </div>
 
@@ -62,6 +52,12 @@
           </div>
         </div>
 
+      <a id="menu">  <!-- NAVICON -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        </svg>
+      </a>
+
       </header>
 
       <section>  <!-- MAIN -->
@@ -81,19 +77,19 @@
         <div class="row text-center">
 
           <div class="col-md-4">
-            <img class="img-responsive img-center" src="images/image2.jpg" alt="German Shepherd dog" data-toggle="modal" data-target="#German_Shepherd">
+            <img class="img-responsive" src="images/image2.jpg" alt="German Shepherd dog" data-toggle="modal" data-target="#German_Shepherd">
             <h3 class="breed-name">German Shepherd</h3>
             <p class="weblink"><a href="https://gsdca.org/">German Shepherd Dog Club</a></p>
           </div>
 
           <div class="col-md-4">
-            <img class="img-responsive img-center" src="images/image3.jpg" alt="Newfounland dog" data-toggle="modal" data-target="#Newfounland">
+            <img class="img-responsive" src="images/image3.jpg" alt="Newfounland dog" data-toggle="modal" data-target="#Newfounland">
             <h3 class="breed-name">Newfounland</h3>
             <p class="weblink"><a href="http://www.ncanewfs.org/">Newfoundland Club</a></p>
           </div>
 
           <div class="col-md-4">
-            <img class="img-responsive img-center" src="images/image4.jpg" alt="Clumber Spaniel" data-toggle="modal" data-target="#Clumber_Spaniel">
+            <img class="img-responsive" src="images/image4.jpg" alt="Clumber Spaniel" data-toggle="modal" data-target="#Clumber_Spaniel">
             <h3 class="breed-name">Clumber Spaniel</h3>
             <p class="weblink"><a href="http://www.clumbers.org">Clumber Spaniel Club</a></p></div>
         </div>
@@ -177,14 +173,14 @@
   <script src="js/jquery-1.11.3.min.js"></script>  <!-- no "type="text/javascript"" as per Style Guide -->
   <script src="js/bootstrap.min.js"></script>  <!-- no "type="text/javascript"" as per Style Guide -->
 
-    <!-- to open the drawer when the navicon icon is clicked -->
+    <!-- to open the drawer when the menu icon is clicked -->
     <script>
 
-      var navicon = document.querySelector('#navicon');
+      var menu = document.querySelector('#menu');
       var main = document.querySelector('main');
       var drawer = document.querySelector('#drawer');
 
-      navicon.addEventListener('click', function(e) {
+      menu.addEventListener('click', function(e) {
         drawer.classList.toggle('open');
         e.stopPropagation();
       });
