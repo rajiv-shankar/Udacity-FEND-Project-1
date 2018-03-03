@@ -1,5 +1,8 @@
-# Build a Portfolio Site
+# Dog Enthusiast website
 
-[Click here](https://rajiv-shankar.github.io/Udacity-FEND-Project-1/) to see website.
+[See it here](https://rajiv-shankar.github.io/Udacity-FEND-Project-1/).
 
-Developed a responsive website with display images, descriptions and links to each of my portfolio projects in my Front-End Web Developer Nanodegree.
+Based on the 'Portfolio Site' project (create a responsive website with
+display images, descriptions and links to each portfolio project in the
+Front-End Web Developer nanodegree), this showcases some dog breeds with links
+to their official dog clubs.
