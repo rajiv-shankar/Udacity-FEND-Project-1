@@ -86,7 +86,6 @@
         </div>
 
         <div class="row text-center">  <!-- secondary images w modals & links -->
-        <!-- modal: dialog box/popup window displayed on top of current page -->
 
           <div class="col-md-4">
             <img class="img-responsive" src="images/image2.jpg"
@@ -146,77 +145,80 @@
     </div>  <!-- /container -->
 
     <!-- MODALS -->
+    <!-- dialog box/popup window displayed on top of current page -->
 
-    <div class="modal fade" id="German_Shepherd" tabindex="-1" role="dialog" aria-labelledby="German_Shepherd1" aria-hidden="true"> <!-- change "id" & "aria-labelledby" -->
+    <div class="modal fade" id="German_Shepherd" tabindex="-1" role="dialog"
+      aria-labelledby="German_Shepherd1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title" id="German_Shepherd1">German Shepherd Dog</h2>  <!-- change "id" & text -->
+            <h2 class="modal-title" id="German_Shepherd1">German Shepherd Dog</h2>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="http://www.dogster.com/wp-content/uploads/2015/05/black-dog-syndrome-06.jpg" alt="German Shepherd">  <!-- change "src" & "alt" -->
-              <div class="modal-text">I grew up to become this beautiful German Shepherd dog</div>  <!-- change text -->
+            <img class="img-responsive"
+              src="http://www.dogster.com/wp-content/uploads/2015/05/black-dog-syndrome-06.jpg"
+              alt="German Shepherd">
+              <div class="modal-text">
+                I grew up to become this beautiful German Shepherd dog
+              </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="Newfounland" tabindex="-1" role="dialog" aria-labelledby="Newfounland1" aria-hidden="true">
+    <div class="modal fade" id="Newfounland" tabindex="-1" role="dialog"
+      aria-labelledby="Newfounland1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title" id="Newfounland1">Newfounland Dog</h2>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="http://www.dogwallpapers.net/wallpapers/black-newfoundland-dog-wallpaper.jpg" alt="Newfounland">
+            <img class="img-responsive"
+              src="http://www.dogwallpapers.net/wallpapers/black-newfoundland-dog-wallpaper.jpg"
+              alt="Newfounland">
               <div class="modal-text">I grew up to become this beautiful Newfounland dog</div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="Clumber_Spaniel" tabindex="-1" role="dialog" aria-labelledby="Clumber_Spaniel1" aria-hidden="true">
+    <div class="modal fade" id="Clumber_Spaniel" tabindex="-1" role="dialog"
+      aria-labelledby="Clumber_Spaniel1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title" id="Clumber_Spaniel1">Clumber Spaniel</h2>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/0/03/Clumber_Spaniel.jpg" alt="Clumber Spaniel">
+            <img class="img-responsive"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/03/Clumber_Spaniel.jpg"
+              alt="Clumber Spaniel">
               <div class="modal-text">I grew up to become this beautiful Clumber Spaniel</div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-  <script src="js/jquery-1.11.3.min.js"></script>  <!-- no "type="text/javascript"" as per Style Guide -->
-  <script src="js/bootstrap.min.js"></script>  <!-- no "type="text/javascript"" as per Style Guide -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
-    <!-- to open the drawer when the menu icon is clicked -->
-    <script>
-
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('#drawer');
-
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
-
-    </script>
+  <script src="js/main.js"></script>
 
 </body>
 

@@ -1,133 +1,130 @@
-/*STYLESHEET FOR "PUPPIES" WEBSITE*/
-
-body {																		/* [+] => espicially useful in large projects, not required in small project like this*/
-	font-family: "Lato", sans-serif;				/* [+] default font, color and weight, can override later on */
-	font-weight: 300;												/* [+] 400 = normal, 700 = bold*/
-	color: #747704;													/* [+] green*/
+body {
+  font-family: "Lato", sans-serif;  /* default font, color and weight, can override later on */
+  font-weight: 300;  /* 400 = normal, 700 = bold */
+  color: #747704;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 /* CLASSES (in order as they appear in HTML) */
 
 .text-muted {
-	color: #bcbbbb;													/* [+] light grey*/
+  color: #bcbbbb;
 }
 
 .text-thin {
-	font-weight: 100;												/* [+] very thin font weight*/
+  font-weight: 100;  /* very thin font */
 }
 
 /* HEADER */
 
 .title-logo {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .title-super {
-	margin-top: 30px;
-	font-size: 60px;
+  margin-top: 30px;
+  font-size: 60px;
 }
 
 .separator {
-	height: 3px;
-	background-color: #747704;
-	width: 100%;
-	margin: 0.5px auto;
-	}
+  height: 3px;
+  background-color: #747704;
+  width: 100%;
+  margin: 0.5px auto;
+  }
 
 /* NAVBAR */
 
-.nav {																		/*entire navbar*/
-	width: 100%;
-	margin: 0.5px auto;
+.nav {  /* entire navbar */
+  width: 100%;
+  margin: 0.5px auto;
 }
 
-.nav__list {															/*are around all buttons*/
-	width: 100%;
+.nav__list {  /* around all buttons */
+  width: 100%;
 }
 
-.nav__item {                              /*button*/
-	box-sizing: border-box;									/*apparently not working (in black, not blue: green) - WHY? */
-	display: inline-block;
-	width: 24%;
-	text-align: center;
-	padding: 20px;
-	font-size: 25px;
-	font-weight: 300;
-	text-transform: uppercase;
+.nav__item {  /* button */
+  box-sizing: border-box;  /* {apparently not working (in black, not blue: green) - WHY?} */
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .nav a {
-	text-decoration: none;									/*else link default: underline*/
-	color: #747704;													/*else link default font-color: blue */
-	padding: 1.5em;
+  text-decoration: none;  /* else link default: underline */
+  color: #747704; /* else link default font-color: blue */
+  padding: 1.5em;
 }
 
 .nav a:hover {
-	background-color: #747704;
-	color: white;
-	padding: 10px;
+  background-color: #747704;
+  color: white;
+  padding: 10px;
 }
 
-a#menu {                              /*"navicon" only appears in "NARROW SCREEN"*/
+a#menu {  /*"navicon" only appears in "NARROW SCREEN"*/
   display: none;
 }
 
 /* MAIN */
 
 .section-heading {
-	margin-top: 30px;
-	font-size: 40px;
-	color: #f8981c;
+  margin-top: 30px;
+  font-size: 40px;
+  color: #f8981c;
 }
 
 .breed-name {
-	font-size: 35px;  											/* shorthand "font: 35px 400" does not work -- WHY? */
-	font-weight: 400;
-	text-transform: uppercase;
+  font-size: 35px;
+  text-transform: uppercase;
 }
 
 .weblink {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .weblink a {
-	text-decoration: none;
-	color: blue;
-	padding: 1.5em;
+  text-decoration: none;
+  color: blue;
+  padding: 1.5em;
 }
 
 .weblink a:hover {
-	background-color: blue;
-	color: white;
-	padding: 10px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
 }
 
 .modal-text {
-	font-size: 25px;
-	font-weight: 300;
+  font-size: 25px;
+  font-weight: 300;
 }
 
 /* FOOTER */
 
 .copyright {
-	padding: 0 0 20px 0;  									/* top/right/bottom/left */
-	font-weight: 400;
-	font-size: 20px;
-	color: #f8981c;
-	text-align: center;
+  padding: 0 0 20px 0;  /* top/right/bottom/left */
+  font-weight: 400;
+  font-size: 20px;
+  color: #f8981c;
+  text-align: center;
 }
 
 .css-val {
-	display: block;
-	margin: auto;
-	padding-bottom: 36px;
+  display: block;
+  margin: auto;
+  padding-bottom: 36px;
 }
 
-/*---------------------------------------------MORE RESPONSIVE DESIGN---------------------------------------------*/
+/* =========================== RESPONSIVE DESIGN ============================ */
 
 /* -- MOBILE -- */
 
@@ -148,9 +145,9 @@ a#menu {                              /*"navicon" only appears in "NARROW SCREEN
     font-size: 15px;
   }
 
-/*---------------------------------------------NAVICON---------------------------------------------*/
+/* -------------------------------- navicon --------------------------------- */
 
-  a#menu {                              /*"navicon" only appears in "NARROW SCREEN"*/
+  a#menu {  /* "navicon" only appears in MOBILE */
     display: block;
   }
 
@@ -159,15 +156,15 @@ a#menu {                              /*"navicon" only appears in "NARROW SCREEN
     fill: #000;
   }
 
-  .nav {																	/*styles for the off-canvas nav element*/
-    z-index: 10;                          /*stack order of element; greater order before lower order; must be paired with "position" attribute*/
+  .nav {  /* styles for the off-canvas nav element */
+    z-index: 10;  /* stack order: greater closer than lower; must be paired with "position" attribute */
     background-color: white;
-    width: 250px;                         /*shrinks from 100%*/
+    width: 250px;  /* shrinks from 100% */
     height: 100%;
-    position: absolute;									  /* absolute: when it comes in it will cover the content */
+    position: absolute;  /*  absolute: when it comes in it will cover the content */
     -webkit-transform: translate(-400px, 0);
-    transform: translate(-400px, 0);			/* moves drawer off canvas. */
-    transition: transform 0.3s ease;      /*animates the drawer*/
+    transform: translate(-400px, 0);  /* moves drawer off canvas */
+    transition: transform 0.3s ease;  /* animates the drawer */
 }
 
   .nav.open {
@@ -182,10 +179,10 @@ a#menu {                              /*"navicon" only appears in "NARROW SCREEN
     text-align: left;
     background-color: white;
     list-style-type:none;
-/*    color: #efefef;*/
+    /* color: #efefef; */
 }
 
-/*---------------------------------------------end---------------------------------------------*/
+/* -------------------------------- /navicon -------------------------------- */
 
   .section-heading {
     margin-top: 20px;
@@ -200,7 +197,7 @@ a#menu {                              /*"navicon" only appears in "NARROW SCREEN
   .weblink {
     font-size: 15px;
   }
-  .modal-dialog  {                        /*changes modal size to fit smaller screen*/
+  .modal-dialog  {  /* changes modal size to fit smaller screen */
     width:300px;
     }
   .modal-title {
@@ -214,7 +211,7 @@ a#menu {                              /*"navicon" only appears in "NARROW SCREEN
   }
   .copyright {
     padding: 0 0 20px 0;
-    font-weight: 300;  /*not working - WHY?*/
+    font-weight: 300;  /* not working - WHY? */
     font-size: 15px;
     color: #f8981c;
     text-align: center;
@@ -223,8 +220,6 @@ a#menu {                              /*"navicon" only appears in "NARROW SCREEN
     display: none;
   }
 }
-
-/*---------------------------------------------haven't worked below this yet---------------------------------------------*/
 
 /* -- TABLET -- */
 
@@ -279,7 +274,10 @@ a#menu {                              /*"navicon" only appears in "NARROW SCREEN
 /* -- WIDESCREEN -- */
 
 @media screen and (min-width: 850px) {
-  main, .header__inner, .nav, .content {
+  main,
+  .header__inner,
+  .nav,
+  .content {
     width: 850px;
     margin-left: auto;
     margin-right: auto;
