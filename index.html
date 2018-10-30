@@ -1,6 +1,4 @@
 <!doctype html>
-<!-- MARKUP FOR "PUPPIES" WEBSITE -->
-
 <html lang="en">
 
 <head>
@@ -12,213 +10,212 @@
   <title>Dog Enthusiast</title>
 
   <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400"
-    rel="stylesheet">  <!-- no "type="text/css" as per Style Guide -->
+    rel="stylesheet">  <!-- no 'type="text/css"' as per Style Guide -->
   <link rel="stylesheet" href="css/bootstrap.min.css">  <!-- css is applied in the order it shows up (all esle being equal) -->
-  <link rel="stylesheet" href="css/main.css">  <!-- to have my styles overwrite similar styles in bootstrap, put this stylesheet last -->
+  <link rel="stylesheet" href="css/main.css">  <!-- place own styles last, so it can overwrite earlier styles, if need be -->
 
 </head>
 
-  <body>
+<body>
 
-    <div class="container">
+  <div class="container">  <!-- container: most basic BS layout element, reqd to use BS default grid system -->
 
-      <header>  <!-- HEADER -->
+    <header>  <!-- HEADER -->
 
-        <div class="row">
-          <!-- Bootstrap's grid system allows up to 12 columns across the page -->
-          <!-- grid classes: xs (phones), sm (tablets), md (desktops), lg (larger desktops -->
-          <div class="col-md-6">  <!-- 1st 1/2 of header -->
-            <img class="img-responsive title-logo" src="images/codeR_logo.jpg"
-              alt="My logo">
-          </div>
-          <div class="col-md-6 text-right text-uppercase">  <!-- 2nd 1/2 of header -->
-            <h1 class="title-super text-thin">Rajiv Shankar</h1>
-            <h4 class="byline">Dog enthusiast</h4>  <!-- added class to make responsive -->
-          </div>
+      <div class="row">
+        <!-- BS's grid system allows up to 12 columns across the page -->
+        <!-- grid classes: xs (phones), sm (tablets), md (desktops), lg (larger desktops) -->
+        <div class="col-md-6">  <!-- 1st 1/2 of header -->
+          <img class="img-responsive title-logo" src="images/codeR_logo.jpg"
+            alt="My logo">
+        </div>
+        <div class="col-md-6 text-right text-uppercase">  <!-- 2nd 1/2 of header -->
+          <h1 class="title-super text-thin">Rajiv Shankar</h1>
+          <h4 class="byline">Dog enthusiast</h4>  <!-- added class to make responsive -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="separator">
+        </div>
+      </div>
+
+      <div class="row">  <!-- NAVBAR -->
+        <div class="col-md-12">
+          <nav id="drawer" class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#home">Home</a></li>
+              <li class="nav__item"><a href="#news">News</a></li>
+              <li class="nav__item">
+                <a href="https://www.linkedin.com/in/shankarrajiv/"
+                target="_blank">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="mailto:rajiv.shankar.email@gmail.com?
+                  Subject=From%20Dog%20enthusiast%20website">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <a id="menu">  <!-- NAVICON -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+        </svg>
+      </a>
+
+    </header>
+
+    <section>  <!-- MAIN -->
+
+      <div class="row">  <!-- primary image -->
+        <div class="col-md-12">
+          <img class="img-responsive" src="images/image1.jpg" alt="Cute puppy">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-heading text-muted">Favorite dogs</h2>
+          <h4 class="copyright">Click on image below for more info</h4>
+        </div>
+      </div>
+
+      <div class="row text-center">  <!-- secondary images w modals & links -->
+
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/image2.jpg"
+            alt="German Shepherd dog" data-toggle="modal"
+            data-target="#German_Shepherd">
+          <h3 class="breed-name">German Shepherd</h3>
+          <p class="weblink">
+            <a href="https://gsdca.org/">German Shepherd Dog Club</a>
+          </p>
         </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <hr class="separator">
-          </div>
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/image3.jpg"
+            alt="Newfounland dog" data-toggle="modal"
+            data-target="#Newfounland">
+          <h3 class="breed-name">Newfounland</h3>
+          <p class="weblink">
+            <a href="http://www.ncanewfs.org/">Newfoundland Club</a>
+          </p>
         </div>
 
-        <div class="row">  <!-- NAVBAR -->
-          <div class="col-md-12">
-            <nav id="drawer" class="nav">
-              <ul class="nav__list">
-                <li class="nav__item"><a href="#home">Home</a></li>
-                <li class="nav__item"><a href="#news">News</a></li>
-                <li class="nav__item">
-                  <a href="https://www.linkedin.com/in/shankarrajiv/"
-                  target="_blank">About</a>
-                </li>
-                <li class="nav__item">
-                  <a href="mailto:rajiv.shankar.email@gmail.com?
-                    Subject=From%20Dog%20enthusiast%20website">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-
-        <a id="menu">  <!-- NAVICON -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
-        </a>
-
-      </header>
-
-      <section>  <!-- MAIN -->
-
-        <div class="row">  <!-- primary image -->
-          <div class="col-md-12">
-            <img class="img-responsive" src="images/image1.jpg" alt="Cute puppy">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="section-heading text-muted">Favorite dogs</h2>
-            <h4 class="copyright">Click on image below for more info</h4>
-          </div>
-        </div>
-
-        <div class="row text-center">  <!-- secondary images w modals & links -->
-
-          <div class="col-md-4">
-            <img class="img-responsive" src="images/image2.jpg"
-              alt="German Shepherd dog" data-toggle="modal"
-              data-target="#German_Shepherd">
-            <h3 class="breed-name">German Shepherd</h3>
-            <p class="weblink">
-              <a href="https://gsdca.org/">German Shepherd Dog Club</a>
+        <div class="col-md-4">
+          <img class="img-responsive" src="images/image4.jpg"
+            alt="Clumber Spaniel" data-toggle="modal"
+            data-target="#Clumber_Spaniel">
+          <h3 class="breed-name">Clumber Spaniel</h3>
+          <p class="weblink">
+            <a href="http://www.clumbers.org">Clumber Spaniel Club</a>
             </p>
           </div>
 
-          <div class="col-md-4">
-            <img class="img-responsive" src="images/image3.jpg"
-              alt="Newfounland dog" data-toggle="modal"
-              data-target="#Newfounland">
-            <h3 class="breed-name">Newfounland</h3>
-            <p class="weblink">
-              <a href="http://www.ncanewfs.org/">Newfoundland Club</a>
-            </p>
-          </div>
+      </div>
 
-          <div class="col-md-4">
-            <img class="img-responsive" src="images/image4.jpg"
-              alt="Clumber Spaniel" data-toggle="modal"
-              data-target="#Clumber_Spaniel">
-            <h3 class="breed-name">Clumber Spaniel</h3>
-            <p class="weblink">
-              <a href="http://www.clumbers.org">Clumber Spaniel Club</a>
-              </p>
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="separator">
+        </div>
+      </div>
+
+    </section>
+
+    <footer>  <!-- FOOTER -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+          </div>
+          <h5 class="copyright">Copyright © Rajiv Shankar 2015</h5>
+          <img class="img-responsive css-val"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!">
+        </div>
+      </div>
+
+    </footer>
+
+  </div>  <!-- /container -->
+
+  <!-- MODALS -->
+  <!-- dialog box/popup window displayed on top of current page -->
+
+  <div class="modal fade" id="German_Shepherd" tabindex="-1" role="dialog"
+    aria-labelledby="German_Shepherd1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="German_Shepherd1">German Shepherd Dog</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive"
+            src="http://www.dogster.com/wp-content/uploads/2015/05/black-dog-syndrome-06.jpg"
+            alt="German Shepherd">
+            <div class="modal-text">
+              I grew up to become this beautiful German Shepherd dog
             </div>
-
         </div>
-
-        <div class="row">
-          <div class="col-md-12">
-            <hr class="separator">
-          </div>
-        </div>
-
-      </section>
-
-      <footer>  <!-- FOOTER -->
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="copyright">
-            </div>
-            <h5 class="copyright">Copyright © Rajiv Shankar 2015</h5>
-            <img class="img-responsive css-val"
-              src="http://jigsaw.w3.org/css-validator/images/vcss"
-              alt="Valid CSS!">
-          </div>
-        </div>
-
-      </footer>
-
-    </div>  <!-- /container -->
-
-    <!-- MODALS -->
-    <!-- dialog box/popup window displayed on top of current page -->
-
-    <div class="modal fade" id="German_Shepherd" tabindex="-1" role="dialog"
-      aria-labelledby="German_Shepherd1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="German_Shepherd1">German Shepherd Dog</h2>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive"
-              src="http://www.dogster.com/wp-content/uploads/2015/05/black-dog-syndrome-06.jpg"
-              alt="German Shepherd">
-              <div class="modal-text">
-                I grew up to become this beautiful German Shepherd dog
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              Close
-            </button>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="Newfounland" tabindex="-1" role="dialog"
-      aria-labelledby="Newfounland1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="Newfounland1">Newfounland Dog</h2>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive"
-              src="http://www.dogwallpapers.net/wallpapers/black-newfoundland-dog-wallpaper.jpg"
-              alt="Newfounland">
-              <div class="modal-text">I grew up to become this beautiful Newfounland dog</div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              Close
-            </button>
-          </div>
+  <div class="modal fade" id="Newfounland" tabindex="-1" role="dialog"
+    aria-labelledby="Newfounland1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="Newfounland1">Newfounland Dog</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive"
+            src="http://www.dogwallpapers.net/wallpapers/black-newfoundland-dog-wallpaper.jpg"
+            alt="Newfounland">
+            <div class="modal-text">I grew up to become this beautiful Newfounland dog</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="Clumber_Spaniel" tabindex="-1" role="dialog"
-      aria-labelledby="Clumber_Spaniel1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="Clumber_Spaniel1">Clumber Spaniel</h2>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive"
-              src="https://upload.wikimedia.org/wikipedia/commons/0/03/Clumber_Spaniel.jpg"
-              alt="Clumber Spaniel">
-              <div class="modal-text">I grew up to become this beautiful Clumber Spaniel</div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">
-              Close
-            </button>
-          </div>
+  <div class="modal fade" id="Clumber_Spaniel" tabindex="-1" role="dialog"
+    aria-labelledby="Clumber_Spaniel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="Clumber_Spaniel1">Clumber Spaniel</h2>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/03/Clumber_Spaniel.jpg"
+            alt="Clumber Spaniel">
+            <div class="modal-text">I grew up to become this beautiful Clumber Spaniel</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-
-  <script src="js/main.js"></script>
+  <script src="js/main.js"></script>  <!-- place own script last, so it can overwrite earlier scripts, if need be -->
 
 </body>
 

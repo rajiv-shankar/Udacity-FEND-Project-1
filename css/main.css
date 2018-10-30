@@ -146,8 +146,9 @@ a#menu {  /*"navicon" only appears in "NARROW SCREEN"*/
   }
 
 /* -------------------------------- navicon --------------------------------- */
+/* only appears in MOBILE */
 
-  a#menu {  /* "navicon" only appears in MOBILE */
+  a#menu {
     display: block;
   }
 
@@ -161,7 +162,7 @@ a#menu {  /*"navicon" only appears in "NARROW SCREEN"*/
     background-color: white;
     width: 250px;  /* shrinks from 100% */
     height: 100%;
-    position: absolute;  /*  absolute: when it comes in it will cover the content */
+    position: absolute;  /*  when it comes in it will cover the content */
     -webkit-transform: translate(-400px, 0);
     transform: translate(-400px, 0);  /* moves drawer off canvas */
     transition: transform 0.3s ease;  /* animates the drawer */
